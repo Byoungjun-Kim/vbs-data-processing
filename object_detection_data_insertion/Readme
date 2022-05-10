@@ -1,0 +1,11 @@
+- Object detection
+
+Object detection은 yolo network를 이용했다. Dataset으로는 coco-dataset을 이용하였다.
+비디오 클립을 frame 변환을 통해 1fps로 변경한다. 비디오 특성상 1fps로 object detection 해도 충분하다고 판단하였다.
+1fps 로 변경된 비디오 클립을 frame 별로 분해하여 각 frame에서 object detection을 돌린다.
+Object detection 결과 confidence의 값이 0.5 이상으로 detect 된 object만 저장한다.
+
+-Object insertion
+
+Detect된 object 들을 list로 만들고 데이터베이스에 shot number와 해당 리스트 두 개의 field를 갖는 데이터를 삽입한다.
+

@@ -1,0 +1,5 @@
+VBS 대회 형식을 보면 AVS를 제외하고 KIS는 clip number가 아닌 frame number를 제출해야한다.
+본 코드들은 모두 clip number로 데이터 베이스에 삽입하였으므로 clip number를 frame number로 
+바꿔주는 과정이 필요하다.
+vbs에서 제공하는 데이터 중 clip number에 해당하는 frame number를 알려주는 데이터가 있다.
+위 데이터를 이용해 clip number를 frame number로 바꿔준다.

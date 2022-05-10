@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+Audio data mongodb insertion
+
+각 프레임마다 audio detection을 통해 해당 비디오 클립이 어떠한 audio class에 속하는지 detect를 하였다.
+Mongoldb feature2 collection에 shot number 와 어떤 audio class인지를 나타내는 sound, 이 두가지 field를 갖는 data를 삽입한다.
+Audio classification을 하면 각 class 별 probability를 같이 계산해준다.
+하나의 클립에 하나의 audio만 존재하는 것이 아니므로 probability 값이 0.7 이상이면 모두 데이터베이스에 넣는다.
